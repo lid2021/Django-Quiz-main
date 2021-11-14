@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tablero de Posiciones </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tutorialjinni.com/jquery/2.1.3/jquery.min.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+        <style>
+            *, *:before, *:after {
+                box-sizing: border-box;
+            }
+            html {
+                overflow-y: scroll;
+            }
+            body {
+            background-image:  url("https://fotos.perfil.com/2019/05/13/trim/960/540/0513-chaco-formosa-low-cost-698403.jpg?format=webp") ;
+            background-size: cover;
+            background-attachment: fixed;    
+            font-family: 'Titillium Web', sans-serif;
+            }
+            a {
+                text-decoration: none;
+                color: #1ab188;
+                -webkit-transition: .5s ease;
+                transition: .5s ease;
+            }
+            a:hover {
+                color: #179b77;
+            }
+            .form {
+                background: rgba(19, 35, 47, 0.9);
+                padding: 40px;
+                max-width: 600px;
+                margin: 40px auto;
+                border-radius: 15px;
+                box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+            }
+
+            h1 {
+                text-align: center;
+                color: #ffffff;
+                font-weight: 14000;
+                margin: 0 0 40px;
+                font-size: 50px ;
+                font-family: "brodway"
+            }
+           
+        </style>
+         <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=6137e4f4eae16400120a509b&product=inline-share-buttons" async="async"></script>
+ 
+    </head>
+ 
+    <body>
+        <div class="form">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+						{% extends 'base.html' %}
+
+{% block contenido %}
+
+unse
+<div class="container">
+	
+	<h1 class="text-center my-4"> 
+		<span class="badge badge-info">
+
+			Los {{contar_user}} mejores jugadores
+			
+		</span>
+	</h1>
+
+
+	<table class="table table-striped table-bodered">
+		<thead>
+			<tr>
+				<th>Posicion</th>
+				<th>Usuario</th>
+				<th>Puntaje</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for user_quiz in usuario_quiz %}
+				<tr>
+					<th>{{forloop.counter}}</th>
+					<th>{{user_quiz.usuario.username}}</th>
+					<th>{{user_quiz.puntaje_total}}</th>
+				</tr>
+			{% endfor %}
+
+           
+		</tbody>
+	</table>
+    <div class="sharethis-inline-share-buttons"></div>
+</div>
+
+{% endblock %}
+
+  
+</body>
+</html>

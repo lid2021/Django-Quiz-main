@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>{% block titulo %}{% endblock %}</title>
+
+	       <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Rubik" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Rubik" rel="stylesheet">
+    <style>
+        h1{
+            color: black
+       }
+        body{
+           background-image:  url("https://fotos.perfil.com/2019/05/13/trim/960/540/0513-chaco-formosa-low-cost-698403.jpg?format=webp") ;
+           background-size: cover;
+           background-attachment: fixed;    
+   
+       }
+       .content {
+           background: rgb(149, 196, 218);
+           width: 50%;
+           padding: 40px;
+           margin: 100px auto;
+           font-family: calibri;
+           }
+   </style>
+</head>
+<body>
+
+	{% block contenido %}
+
+	{% endblock %}
+
+</body>
+</html>

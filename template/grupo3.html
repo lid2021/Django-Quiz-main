@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo3</title>
+    <style>
+            
+        .head1 {
+            font-size:25px;
+            color:#009900;
+            font-weight:bold;
+        }
+        .head2 {
+            font-size:17px;
+            margin-left: 0px;
+            margin-bottom:5px;
+        }
+        body {
+             background-size: cover;
+            background-attachment: fixed;   
+            background-position:center;
+   
+        }
+     
+        .menu {  
+            position: sticky;
+            top: 0;
+            background-color: black;
+            padding:10px 0px 10px 0px;
+            color:white;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .menu a {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .menu-log {
+            right: auto;
+            float: right;}
+        .section-2{
+            overflow:hidden;
+            margin-top: 5em;
+            padding: 5px;
+            border-top: 1px solid rgba(0, 0, 0, 0.2);
+            text-align: center
+        }    
+        .row #column1 {
+            float: left;
+            width: 320px;
+            padding: 80px 40px 80px 40px;
+        }
+        .row #column2 {
+            float: left;
+            width: 320px;
+            padding: 80px 40px 80px 40px;
+        }
+        .row #column3 {
+            float: left;
+            width: 320px;
+            padding: 80px 40px 80px 40px;
+        }
+        .row #column4 {
+            float: left;
+            width: 320px;
+            padding: 80px 40px 80px 40px;
+        }
+        .column-title h2{
+            margin: 1em 0em;
+            font-size: 1.6em;
+            font-weight: 700;
+        }
+       
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%
+            }
+        }
+        .column {
+            flex: 50%;
+            float: left;
+            width: 25%;
+            padding: 25px;
+            text-aling: center;
+            font-size: 25px;
+            color: white;
+
+        }
+        img {
+            border-radius: 50%;
+        }
+        .left {
+            width: 75%
+
+        }
+        .right {
+            width: 75%
+
+        }
+        .row {
+            display: flex;
+        }
+
+        .row:after {
+            content:"";
+            display: table;
+            clear: both;
+        }
+        .container tab{
+            padding: 20px;
+            color: white;
+        }
+        div{
+            column-gap: 20px;
+        }
+        h1 {
+            text-aling: center;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <a href="{% url 'inicio' %}">Volver al Inicio</a>
+         
+         
+            <div class="menu-log">
+             
+              </div>
+      </div>
+    </header>
+    <main class='content'>
+        <section class="container" id="section-1">
+            <div style = "font-size:200%" >
+                <h1 class="display-1" font-family="bold" font-color="white"> Integrantes de la Comisión Nº5, Grupo Nº3 </h1>
+            </div>
+
+
+        </section>
+
+        <section class="container" id="section-2">
+            <div class="row">
+    <div id="column1" style="background: #66CCFF;">
+        <div class="column-title">
+            <img src="https://media-exp1.licdn.com/dms/image/C4D03AQGnpd45rLOEUg/profile-displayphoto-shrink_200_200/0/1630781592198?e=1636588800&v=beta&t=WJmVx24QC5lNoRLmYCXTMfYdu1uq7IR-0bBZ4zhkps8" alt="foto gonza">
+            <h2>
+                Abalos Gonzalo
+            </h2>
+        </div>
+        <div class="badge-base LI-profile-badge" data-locale="es_ES" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="gonzaloabalos" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://ar.linkedin.com/in/gonzaloabalos?trk=profile-badge">LinkedIn Gonzalo Abalos</a></div>
+        <p>
+            "Soy Gonzalo Abalos, tengo 40 años y soy de Colonia Elisa Chaco. Soy Masoterapeuta Profesional hace 15 años, actualmente vivo en Gral. San Martín. Comencé a cursar el Informatorio para aprender sobre programación desde cero para ingresar al mundo de la Informática"
+        </p>
+    </div>
+    
+    
+    <div id="column2" style="background: #66CC66;">
+    <div class="column-title">
+        <img src="https://media-exp1.licdn.com/dms/image/C4D03AQFHjBn_IAr6Cg/profile-displayphoto-shrink_200_200/0/1630461497816?e=1636588800&v=beta&t=l1MEMGP2YG7ebq-HsEILuZM_QfetbXn6mu5CXT79NyQ" alt="foto leandro">
+        <h2>Benitez Leandro</h2>
+    </div>
+    <div class="badge-base LI-profile-badge" data-locale="es_ES" data-size="medium" data-theme="light" data-type="VERTICAL"  data-version="v1"><a class="badge-base__link LI-simple-link" href="https://ar.linkedin.com/in/leandro-benitez-973b491a8">LinkedIn Leandro Benitez</a></div>
+    <p>
+        "Soy Leandro Benitez,vivo en Resistencia-Chaco y soy estudiante de la Universidad Nacional del Nordeste en la carrera de Licenciaruta en Sistema de Información de Gestión General. Me interesé por el Informatorio por la oportunidad que ofrecen de empleo al estar respaldada por el Gobierno Provincial y una empresa de renombre como Globant"
+    </p>
+    </div>
+    
+    
+    <div id="column3" style="background: #66CCFF;">
+    <div class="column-title">
+        <img src="https://media-exp1.licdn.com/dms/image/C4D03AQGoswBl-TI66Q/profile-displayphoto-shrink_200_200/0/1630811051028?e=1636588800&v=beta&t=2oof3HPNfOzEBLt1o_z9hPvLcsGn0qQIYwg5T6Vo_N0" alt="foto brian">
+        <h2>
+            Stacul Brian
+        </h2>
+    </div>
+    <div class="badge-base LI-profile-badge" data-locale="es_ES" data-size="medium" data-theme="light" data-type="VERTICAL" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/braian-stacul-67a1041b2/">LinkedIn Braian Stacul</a></div>
+               <p>
+        "Soy Braian Rito Elías Stacul, tengo 21 años y soy de Quitilipi,Chaco. Curso la carrera de Ing. en Sistema de Informaciòn y actualmente estoy en 4to año. Elegì cursar el Informatorio-2021 porque me intereso conocer y comprender todo lo relacionado a las distintas tecnologías de la Información y de la industria del software en general."
+    </p>
+    </div>
+    
+    
+    <div id="column4" style="background: #66CC66;">
+    <div class="column-title">
+        <img src="https://media-exp1.licdn.com/dms/image/C5603AQGMEBJfHdjLqw/profile-displayphoto-shrink_200_200/0/1630773269576?e=1636588800&v=beta&t=7u1aJ6ES4YIbhexD93i-gxxpHDTHGDtQfDvLBoqdtSI" alt="foto lidia">
+   
+        <h2>Zapiola Lidia</h2>
+    </div>
+    <div class="badge-base LI-profile-badge" data-locale="es_ES" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="lidia-viviana-zapiola-5a0124220" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://ar.linkedin.com/in/lidia-viviana-zapiola-5a0124220?trk=profile-badge">LinkedIn Viviana Zapiola</a></div>
+       <p>
+           "Mi Nombre es Lidia Viviana Zapiola, vivo en Gral. San Martín-Chaco donde trabajo en el Poder Judicial y tengo 39 años. Me intereso el Informatorio por que siempre quise aprender sobre programación, me encanta todo lo referente al diseño de páginas web y aplicaciones."
+       </p> 
+      </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
+
+</body>
+</html>
